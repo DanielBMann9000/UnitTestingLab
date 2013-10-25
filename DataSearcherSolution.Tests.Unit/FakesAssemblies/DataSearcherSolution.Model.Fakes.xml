@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataSearcherSolution.Model.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:DataSearcherSolution.Model.Fakes.ShimPerson">
+            <summary>Shim type of DataSearcherSolution.Model.Person</summary>
+        </member>
+        <member name="M:DataSearcherSolution.Model.Fakes.ShimPerson.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DataSearcherSolution.Model.Fakes.ShimPerson.#ctor(DataSearcherSolution.Model.Person)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:DataSearcherSolution.Model.Fakes.ShimPerson.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DataSearcherSolution.Model.Fakes.ShimPerson.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DataSearcherSolution.Model.Fakes.ShimPerson.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DataSearcherSolution.Model.Fakes.ShimPerson.Constructor">
+            <summary>Sets the shim of Person.Person()</summary>
+        </member>
+        <member name="P:DataSearcherSolution.Model.Fakes.ShimPerson.DaysSinceLastLoginGet">
+            <summary>Sets the shim of Person.get_DaysSinceLastLogin()</summary>
+        </member>
+        <member name="P:DataSearcherSolution.Model.Fakes.ShimPerson.FirstNameGet">
+            <summary>Sets the shim of Person.get_FirstName()</summary>
+        </member>
+        <member name="P:DataSearcherSolution.Model.Fakes.ShimPerson.FirstNameSetString">
+            <summary>Sets the shim of Person.set_FirstName(String value)</summary>
+        </member>
+        <member name="P:DataSearcherSolution.Model.Fakes.ShimPerson.LastLoginGet">
+            <summary>Sets the shim of Person.get_LastLogin()</summary>
+        </member>
+        <member name="P:DataSearcherSolution.Model.Fakes.ShimPerson.LastLoginSetDateTime">
+            <summary>Sets the shim of Person.set_LastLogin(DateTime value)</summary>
+        </member>
+        <member name="P:DataSearcherSolution.Model.Fakes.ShimPerson.LastNameGet">
+            <summary>Sets the shim of Person.get_LastName()</summary>
+        </member>
+        <member name="P:DataSearcherSolution.Model.Fakes.ShimPerson.LastNameSetString">
+            <summary>Sets the shim of Person.set_LastName(String value)</summary>
+        </member>
+        <member name="T:DataSearcherSolution.Model.Fakes.ShimPerson.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DataSearcherSolution.Model.Fakes.ShimPerson.AllInstances.DaysSinceLastLoginGet">
+            <summary>Sets the shim of Person.get_DaysSinceLastLogin()</summary>
+        </member>
+        <member name="P:DataSearcherSolution.Model.Fakes.ShimPerson.AllInstances.FirstNameGet">
+            <summary>Sets the shim of Person.get_FirstName()</summary>
+        </member>
+        <member name="P:DataSearcherSolution.Model.Fakes.ShimPerson.AllInstances.FirstNameSetString">
+            <summary>Sets the shim of Person.set_FirstName(String value)</summary>
+        </member>
+        <member name="P:DataSearcherSolution.Model.Fakes.ShimPerson.AllInstances.LastLoginGet">
+            <summary>Sets the shim of Person.get_LastLogin()</summary>
+        </member>
+        <member name="P:DataSearcherSolution.Model.Fakes.ShimPerson.AllInstances.LastLoginSetDateTime">
+            <summary>Sets the shim of Person.set_LastLogin(DateTime value)</summary>
+        </member>
+        <member name="P:DataSearcherSolution.Model.Fakes.ShimPerson.AllInstances.LastNameGet">
+            <summary>Sets the shim of Person.get_LastName()</summary>
+        </member>
+        <member name="P:DataSearcherSolution.Model.Fakes.ShimPerson.AllInstances.LastNameSetString">
+            <summary>Sets the shim of Person.set_LastName(String value)</summary>
+        </member>
+        <member name="T:DataSearcherSolution.Model.Fakes.StubPerson">
+            <summary>Stub type of DataSearcherSolution.Model.Person</summary>
+        </member>
+        <member name="M:DataSearcherSolution.Model.Fakes.StubPerson.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DataSearcherSolution.Model.Fakes.StubPerson.InitializeStub">
+            <summary>Initializes a new instance of type StubPerson</summary>
+        </member>
+        <member name="P:DataSearcherSolution.Model.Fakes.StubPerson.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:DataSearcherSolution.Model.Fakes.StubPerson.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DataSearcherSolution.Model.Fakes.StubPerson.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>
