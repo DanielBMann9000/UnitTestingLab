@@ -4,10 +4,11 @@ using System.Data.Common;
 using System.Data.SqlServerCe;
 using System.Linq;
 using DataSearcher.Model;
+using DataSearcher.Repository;
 
 namespace DataSearcher.Data
 {
-    public class PeopleDatabaseSearcher
+    public class PeopleDatabaseSearcher : IPeopleSearchRepository
     {
         static PeopleDatabaseSearcher()
         {

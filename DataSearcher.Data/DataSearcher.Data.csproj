@@ -77,6 +77,10 @@
       <Project>{f0be67da-a34d-4cd9-8d49-ffba9066bafb}</Project>
       <Name>DataSearcher.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DataSearcher.Repository\DataSearcher.Repository.csproj">
+      <Project>{6c906bc6-bced-456b-a648-0d70fe1216ad}</Project>
+      <Name>DataSearcher.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="PeopleDatabase.sdf">

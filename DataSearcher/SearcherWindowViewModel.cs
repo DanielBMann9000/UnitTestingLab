@@ -5,12 +5,14 @@ using System.Runtime.CompilerServices;
 using DataSearcher.Annotations;
 using DataSearcher.Data;
 using DataSearcher.Model;
+using DataSearcher.Repository;
 
 namespace DataSearcher
 {
     public class SearcherWindowViewModel : INotifyPropertyChanged
     {
         #region Fields
+        private readonly IPeopleSearchRepository peopleRepo;
         private string firstNameSearchCriteria = string.Empty;
         private string lastNameSearchCriteria = string.Empty;
         #endregion Fields
@@ -31,7 +33,7 @@ namespace DataSearcher
             }
         }
 
-        
+
         public string LastNameSearchCriteria
         {
             get { return this.lastNameSearchCriteria; }
@@ -51,21 +53,23 @@ namespace DataSearcher
         #endregion Properties
 
         #region Constructors
-        
-
-
-        public SearcherWindowViewModel()
+        public SearcherWindowViewModel(IPeopleSearchRepository peopleRepo)
         {
-            People = new ObservableCollection<Person>(new PeopleDatabaseSearcher().GetAllPeople());
+            this.peopleRepo = peopleRepo;
+            People = new ObservableCollection<Person>(this.peopleRepo.GetAllPeople());
         }
+
+        public SearcherWindowViewModel() : this(new PeopleDatabaseSearcher())
+        {
+        }
+
         #endregion Constructors
 
         #region Methods
         private void UpdatePeople()
         {
-            var searcher = new PeopleDatabaseSearcher();
-            var result = searcher.GetAllPeople();
-            
+            var result = peopleRepo.GetAllPeople();
+
             var filtered = result.Where(
                         p =>
                             p.FirstName.ToLower().StartsWith(firstNameSearchCriteria.ToLower()) &&

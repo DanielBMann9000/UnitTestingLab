@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSearcher", "DataSearcher\DataSearcher.csproj", "{B4FD9F54-A145-4E40-A14C-A0202D1FA8ED}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSearcher.Tests.Unit", "DataSearcher.Tests.Unit\DataSearcher.Tests.Unit.csproj", "{7EF930E6-C429-488F-922E-12D2090E1291}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise", "Exercise", "{8E347531-FEA5-43F1-9FF4-46295C21FC9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSearcher.Repository", "DataSearcher.Repository\DataSearcher.Repository.csproj", "{6C906BC6-BCED-456B-A648-0D70FE1216AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{7EF930E6-C429-488F-922E-12D2090E1291}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EF930E6-C429-488F-922E-12D2090E1291}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EF930E6-C429-488F-922E-12D2090E1291}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C906BC6-BCED-456B-A648-0D70FE1216AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C906BC6-BCED-456B-A648-0D70FE1216AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C906BC6-BCED-456B-A648-0D70FE1216AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C906BC6-BCED-456B-A648-0D70FE1216AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,5 +50,6 @@ Global
 		{C5F1C936-336A-4BB1-8F90-AC46F6C27FE9} = {8E347531-FEA5-43F1-9FF4-46295C21FC9B}
 		{F0BE67DA-A34D-4CD9-8D49-FFBA9066BAFB} = {8E347531-FEA5-43F1-9FF4-46295C21FC9B}
 		{7EF930E6-C429-488F-922E-12D2090E1291} = {8E347531-FEA5-43F1-9FF4-46295C21FC9B}
+		{6C906BC6-BCED-456B-A648-0D70FE1216AD} = {8E347531-FEA5-43F1-9FF4-46295C21FC9B}
 	EndGlobalSection
 EndGlobal

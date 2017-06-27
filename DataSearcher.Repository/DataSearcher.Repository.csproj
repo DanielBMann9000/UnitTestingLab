@@ -7,8 +7,8 @@
     <ProjectGuid>{6C906BC6-BCED-456B-A648-0D70FE1216AD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataSearcherSolution.Repository</RootNamespace>
-    <AssemblyName>DataSearcherSolution.Repository</AssemblyName>
+    <RootNamespace>DataSearcher.Repository</RootNamespace>
+    <AssemblyName>DataSearcher.Repository</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -43,9 +43,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataSearcherSolution.Model\DataSearcherSolution.Model.csproj">
-      <Project>{28474197-a763-4e22-befd-3705a9e1a3e3}</Project>
-      <Name>DataSearcherSolution.Model</Name>
+    <ProjectReference Include="..\DataSearcher.Model\DataSearcher.Model.csproj">
+      <Project>{f0be67da-a34d-4cd9-8d49-ffba9066bafb}</Project>
+      <Name>DataSearcher.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

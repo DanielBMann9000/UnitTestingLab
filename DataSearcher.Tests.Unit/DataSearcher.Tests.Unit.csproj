@@ -35,8 +35,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="DataSearcher.Repository.Fakes">
+      <HintPath>FakesAssemblies\DataSearcher.Repository.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="mscorlib.4.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\mscorlib.4.0.0.0.Fakes.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.4.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\System.4.0.0.0.Fakes.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -63,10 +74,23 @@
       <Project>{f0be67da-a34d-4cd9-8d49-ffba9066bafb}</Project>
       <Name>DataSearcher.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DataSearcher.Repository\DataSearcher.Repository.csproj">
+      <Project>{6C906BC6-BCED-456B-A648-0D70FE1216AD}</Project>
+      <Name>DataSearcher.Repository</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataSearcher\DataSearcher.csproj">
       <Project>{b4fd9f54-a145-4e40-a14c-a0202d1fa8ed}</Project>
       <Name>DataSearcher</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\System.fakes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\mscorlib.fakes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\DataSearcher.Repository.fakes" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

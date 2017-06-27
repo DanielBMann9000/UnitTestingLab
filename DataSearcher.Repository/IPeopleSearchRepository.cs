@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using DataSearcherSolution.Model;
+using DataSearcher.Model;
 
-namespace DataSearcherSolution.Repository
+namespace DataSearcher.Repository
 {
     public interface IPeopleSearchRepository
     {

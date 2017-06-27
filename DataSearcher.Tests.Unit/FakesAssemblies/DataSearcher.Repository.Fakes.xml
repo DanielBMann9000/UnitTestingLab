@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataSearcher.Repository.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:DataSearcher.Repository.Fakes.StubIPeopleSearchRepository">
+            <summary>Stub type of DataSearcher.Repository.IPeopleSearchRepository</summary>
+        </member>
+        <member name="M:DataSearcher.Repository.Fakes.StubIPeopleSearchRepository.#ctor">
+            <summary>Initializes a new instance of type StubIPeopleSearchRepository</summary>
+        </member>
+        <member name="M:DataSearcher.Repository.Fakes.StubIPeopleSearchRepository.DataSearcher#Repository#IPeopleSearchRepository#GetAllPeople">
+            <summary>Sets the stub of IPeopleSearchRepository.GetAllPeople()</summary>
+        </member>
+        <member name="F:DataSearcher.Repository.Fakes.StubIPeopleSearchRepository.GetAllPeople">
+            <summary>Sets the stub of IPeopleSearchRepository.GetAllPeople()</summary>
+        </member>
+    </members>
+</doc>
