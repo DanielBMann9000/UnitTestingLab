@@ -51,10 +51,12 @@ namespace DataSearcher
         #endregion Properties
 
         #region Constructors
+        
+
+
         public SearcherWindowViewModel()
         {
-            var searcher = new PeopleDatabaseSearcher();
-            People = new ObservableCollection<Person>(searcher.GetAllPeople());
+            People = new ObservableCollection<Person>(new PeopleDatabaseSearcher().GetAllPeople());
         }
         #endregion Constructors
 

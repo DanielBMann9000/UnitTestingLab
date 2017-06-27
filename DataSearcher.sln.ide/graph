@@ -1,0 +1,12 @@
+﻿<Solution Format="0.0.0.3">
+  <Version>2014-09-22T18:46:59.061312Z</Version>
+  <Project Path="C:\Users\danie_000\Desktop\Presentations\Unit testing\UnitTestingLab-student\DataSearcher\DataSearcher.csproj">
+    <Reference Path="C:\Users\danie_000\Desktop\Presentations\Unit testing\UnitTestingLab-student\DataSearcher.Data\DataSearcher.Data.csproj" />
+    <Reference Path="C:\Users\danie_000\Desktop\Presentations\Unit testing\UnitTestingLab-student\DataSearcher.Model\DataSearcher.Model.csproj" />
+  </Project>
+  <Project Path="C:\Users\danie_000\Desktop\Presentations\Unit testing\UnitTestingLab-student\DataSearcher.Data\DataSearcher.Data.csproj">
+    <Reference Path="C:\Users\danie_000\Desktop\Presentations\Unit testing\UnitTestingLab-student\DataSearcher.Model\DataSearcher.Model.csproj" />
+  </Project>
+  <Project Path="C:\Users\danie_000\Desktop\Presentations\Unit testing\UnitTestingLab-student\DataSearcher.Tests.Unit\DataSearcher.Tests.Unit.csproj" />
+  <Project Path="C:\Users\danie_000\Desktop\Presentations\Unit testing\UnitTestingLab-student\DataSearcher.Model\DataSearcher.Model.csproj" />
+</Solution>

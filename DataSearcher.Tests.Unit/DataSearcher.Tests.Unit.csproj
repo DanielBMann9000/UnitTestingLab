@@ -35,6 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -52,6 +53,20 @@
   <ItemGroup>
     <Compile Include="When_Searching_For_Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataSearcher.Data\DataSearcher.Data.csproj">
+      <Project>{c5f1c936-336a-4bb1-8f90-ac46f6c27fe9}</Project>
+      <Name>DataSearcher.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataSearcher.Model\DataSearcher.Model.csproj">
+      <Project>{f0be67da-a34d-4cd9-8d49-ffba9066bafb}</Project>
+      <Name>DataSearcher.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataSearcher\DataSearcher.csproj">
+      <Project>{b4fd9f54-a145-4e40-a14c-a0202d1fa8ed}</Project>
+      <Name>DataSearcher</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
